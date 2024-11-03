@@ -1,2 +1,4 @@
 git:
   remoteHTTPS: https://github.com/Theodorbjorkner/jenkins-pipeline-tutorial__<REPOSITORY_NAME>.git
+  cicdConfig:
+    pipelineConfigFolderPath: cicd\pipeline-config
