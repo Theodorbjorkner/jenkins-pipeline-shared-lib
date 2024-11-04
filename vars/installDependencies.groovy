@@ -1,5 +1,5 @@
 public void call(){
-    _nmpInstall();
+    _npmInstall();
 }
 
 private void _npmInstall(){
