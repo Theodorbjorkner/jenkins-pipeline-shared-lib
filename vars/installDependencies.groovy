@@ -1,4 +1,4 @@
-public void call(){
+public void call() {
     _npmInstall();
 }
 
