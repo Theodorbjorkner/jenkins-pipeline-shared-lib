@@ -8,10 +8,11 @@ public void call(String repositoryName, String sourceBranch){
     // Clone repo
     final String gitUrl = _generateGitUrl(repositoryName);
     checkout (
-            scm:
+            scm: [
             scmGit(branches: [[name: "refs/heads/${sourceBranch}"]],
                     extensions: [],
                     userRemoteConfigs: [[url: gitUrl]]),
+            ],
             changelog: true, poll: false);
 }
  private String _generateGitUrl(String repositoryName){
