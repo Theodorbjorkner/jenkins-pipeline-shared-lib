@@ -6,7 +6,7 @@ public Map call (){
     final GString pipelineConfigYamlPath= "${pipelineConfigFolderPath}/pipeline-config.yaml";
 
     // read config
-    final Map pipelineConfigMap = readYaml(file: globalConfigsResources);
+    final Map pipelineConfigMap = readYaml(file: pipelineConfigYamlPath);
     return pipelineConfigMap;
 
 }
